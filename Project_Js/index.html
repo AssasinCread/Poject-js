@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <header class="top_header">
+        <div class="bank_icon">
+            <img src="src/img/Bank_icon.png" alt="Bank Icon">
+        </div>
+    </header>
+    <main class="mid_main">
+        <div class="payment_wrapper">
+                <label for="Principal">Начальна сумма вклада (₽)</label>
+                <input type="number" id="Principal" value="1000">
+                <label for="Rate">Процентная ставка:</label>
+                <input type="number" id="Rate" value="12.5">
+                <label for="days">Число:</label>
+                <input type="number" id="days" value="10">
+                <select name="duration" id="duration">
+                    <option value="year">Год</option>
+                    <option value="month">Месяц</option>
+                </select>
+                <button id="calculate-btn">Рассчитать</button>
+        </div>
+        <div id="result">2</div>
+        <div id="calculator">
+            <div class="top">
+                <span class="clear">C</span>
+                <div class="screen"></div>
+            </div>
+            <div class="keys">   
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span class="operator">+</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span class="operator">-</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span class="operator">÷</span>
+                <span>0</span>
+                <span>.</span>
+                <span class="eval">=</span>
+                <span class="operator">x</span>
+            </div>
+        </div>
+        <table class="table_main">
+            <tr>
+             <th class="txt_td">Условие</th>
+             <th class="txt_td">Да/Нет</th>
+            </tr>
+            <tr>
+            <td class="txt_td">
+                Устанавливаем начальный вклад 100000
+                Срок 180 дней
+                Ставка 8%
+                Пополнение 10000
+            </td>
+            <td class="txt_td"></td>
+           </tr>
+           <tr>
+            <td class="txt_td">
+                Устанавливаем начальный вклад 1 234 567
+                Срок 545 дней
+                Ставка 3.5%
+                Пополнение 54321
+            </td>
+            <td class="txt_td"></td>
+           </tr>
+           <tr>
+            <td class="txt_td">
+                Устанавливаем начальный вклад -1
+                Срок 360 дней
+                Ставка 5%
+                Пополнение 10000
+            </td>
+            <td class="txt_td"></td>
+           </tr>
+           <tr>
+            <td class="txt_td">
+                Устанавливаем начальный вклад 100000
+                Срок 555 дней
+                Ставка 5%
+                Пополнение -10000
+            </td>
+            <td class="txt_td"></td>
+           </tr>
+           <tr>
+            <td class="txt_td">
+                Устанавливаем начальный вклад 100000
+                Срок 360 дней
+            </td>
+            <td class="txt_td"></td>
+           </tr>
+           <tr>
+            <td class="txt_td">
+                Ставка 0
+                Пополнение 10000
+            </td>
+            <td class="txt_td"></td>
+           </tr>
+           <tr>
+            <td class="txt_td">
+                Устанавливаем начальный вклад 100000
+                Срок 360 месяцев
+                Ставка 0
+            </td>
+            <td class="txt_td"></td>
+           </tr>
+          </table>
+    </main>
+  
+    <footer class="bootom_footer">
+
+    </footer>
+
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>
